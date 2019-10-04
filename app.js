@@ -1,12 +1,13 @@
 var port =3000
 var express = require("express"),
     app = express(),
-    bodyParser = require("body-parser"),
+    bodyParser = require("body-parser" ),
     mongoose = require("mongoose"),
     methodOverride = require("method-override"),
     expressSanitizer = require("express-sanitizer");
-    
-mongoose.connect("mongodb://localhost/blog_app");
+    mongoose.set('useUnifiedTopology', true);
+mongoose.connect("mongodb://localhost/blog_app",{useNewUrlParser:true});
+
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer());
