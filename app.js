@@ -1,3 +1,4 @@
+var port =3000
 var express = require("express"),
     app = express(),
     bodyParser = require("body-parser"),
@@ -105,6 +106,6 @@ app.delete("/blogs/:id", function(req, res){
         }
     });
 });
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(port, function(){
     console.log("Server is working");
 });
