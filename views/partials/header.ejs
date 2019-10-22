@@ -6,11 +6,45 @@
         <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
     </head>
     <body>
-        <div class="ui inverted menu fixed">
+     <!--    <div class="ui inverted menu ">
             <div class="ui container">
                 <div class="header item"><i class="phoenix framework icon"></i> Blog Page</div>
                 <a href="/" class="item">Home</a>
                 <a href="/blogs/new" class="item">New Post</a>
             </div>
         </div>
-        
+         -->
+<div class="ui grid">
+    
+    <div class="computer only row">
+        <div class="column">
+            <div class="ui inverted menu fixed ">
+                 <div class="ui container">
+                <div class="header item"><i class="phoenix framework icon"></i> Blog Page</div>
+                <a href="/" class="item">Home</a>
+                <a href="/blogs/new" class="item">New Post</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+     <div class="tablet mobile only row">
+        <div class="column">
+            <div class="ui inverted menu fixed ">
+                <a id="mobile_item" class="item"><i class="bars icon"></i></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="ui pushable segment">
+        <div class="ui sidebar inverted vertical menu">
+             <div class="ui container">
+                <div class="header item"><i class="phoenix framework icon"></i> Blog Page</div>
+                <a href="/" class="item">Home</a>
+                <a href="/blogs/new" class="item">New Post</a>
+            </div>
+        </div>
+        <div class="pusher">
+                <div id="content" >
