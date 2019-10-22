@@ -8,3 +8,15 @@ i.icon{
 #deleteBtn{
     display: inline;
 }
+#content {
+		min-height: 100px;
+		}
+.ui.grid{
+		padding: 0 !important;
+		}
+.pushable.segment{
+		margin: 0 !important;
+		}
+#content{
+	margin-top:6em;
+}
